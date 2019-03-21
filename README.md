@@ -4,13 +4,13 @@ Jenkins maven server pull a source code from Github, to build jar/war file,  sen
 Push docker image to AWS ECR repository.
 Then, Running aws cloudformation with below yaml files to deploy docker image on AWS Fargate ECS 
 
-* Create AWS ECR repository command*
+* Create AWS ECR repository command
   $aws  ecr create-repository  --repository-name  <<he name of repository>>
 * to loggin to AWS 
   $aws  ecr  get-login  --no-include-email  |  sh 
-* create AWS VPC network Run cloudfomation command *
+* create AWS VPC network Run cloudfomation command 
    $aws cloudformation create-stack --stack-name vpc --template-body file://$PWD/infrs/vpc.yml
-* If you want to look and copy repository URL in to ecr describe repository do below command *
+* If you want to look and copy repository URL in to ecr describe repository do below command 
   $aws  ecr  describe-repositories  --repository-name  << The name of repository >>
 ** tag docker image file ECR repository will shows each version **
   $docker  tag <<the name of image>>   repository_URL/<<Repository_Name>>:v_${BUILD_NUMBER}
