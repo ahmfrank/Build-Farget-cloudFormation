@@ -28,3 +28,4 @@ Then, Running aws cloudformation with below yaml files to deploy docker image on
   aws cloudformation create-stack --stack-name api file://$PWD/api.yml
   
 * Port mapping 80:8080, Container port is 8080, and ALB port is 80
+* the app *war file build-in with Tomcat container at ECR 852841908877.dkr.ecr.us-east-2.amazonaws.com/docker-images:lates   
