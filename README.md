@@ -13,7 +13,7 @@ Then, Running aws cloudformation with below yaml files to deploy docker image on
 * If you want to look and copy repository URL in to ecr describe repository do below command        
   $aws  ecr  describe-repositories  --repository-name  << The name of repository >>
 * tag docker image file ECR repository will shows each version                                                 
-  $docker  tag "the name of image"   repository_URL/<<Repository_Name>>:v_${BUILD_NUMBER}
+  $docker  tag << The name of image >>   repository_URL/<<Repository_Name>>:v_${BUILD_NUMBER}
   
 * Push to ECR                                                                
   $docker push repository_URL/<<Repository_Name>>:v_${BUILD_NUMBER}
