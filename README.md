@@ -8,7 +8,7 @@ Then, Running aws cloudformation with below yaml files to deploy docker image on
   $aws  ecr create-repository  --repository-name  <<he name of repository>>
 * to loggin to AWS 
   $aws  ecr  get-login  --no-include-email  |  sh 
-* create AWS VPC network Run cloudfomation command 
+* create AWS VPC network Run cloudfomation command:    
    $aws cloudformation create-stack --stack-name vpc --template-body file://$PWD/infrs/vpc.yml
 * If you want to look and copy repository URL in to ecr describe repository do below command 
   $aws  ecr  describe-repositories  --repository-name  << The name of repository >>
