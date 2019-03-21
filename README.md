@@ -1,4 +1,4 @@
-# app
+# How to create AWS ECS Farget with CloudFormation tool
 Dokcer-AWS-ECS
 Jenkins maven server pull a source code from Github, to build jar/war file,  send to docker host to build docker image and 
 Push docker image to AWS ECR repository.
